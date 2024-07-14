@@ -1,0 +1,89 @@
+/* first section */
+.intro{
+    height: 550px;
+    background: url("/assets/img/agency4-portfolio-bg.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.intro > .left{
+    width: 70%;
+    margin: 0 auto;
+    height: fit-content;
+}
+.intro > .left > .subtitle{
+    margin-top: 20px;
+    line-height: 20px;
+}
+.portfolio{
+    padding: 100px 0 10px 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 570px 570px;
+    gap: 50px;
+}
+.portfolio > .portfolio-item{
+    height: fit-content;
+}
+.portfolio > .portfolio-item > .item-picture{
+    height: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.portfolio >.portfolio-item >.item-picture > img{
+    transition: all 0.2s;
+}
+.portfolio > .portfolio-item > .item-picture:hover > img{
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+.portfolio > .portfolio-item > .item-title-like-place{
+    font-size: 17px;
+}
+.portfolio > .portfolio-item > .item-subtitle{
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+/* i imported the styles of sign up section's into the head tag of html page */
+/* i imported footer's styles into the head tag in html page */
+
+
+/* responsive */
+/* the responsive codes of header,footer,sign up section are in their own css file.*/
+
+@media screen and (max-width: 1300px){
+    .portfolio{
+        grid-template-columns: 450px 450px;
+    }
+    .portfolio > .portfolio-item > .item-picture{
+        height: 221px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .portfolio{
+        grid-template-columns: 350px 350px;
+    }
+    .portfolio > .portfolio-item > .item-picture{
+        height: 172px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .portfolio{
+        grid-template-columns: 570px;
+    }
+    .portfolio > .portfolio-item > .item-picture{
+        height: 280px;
+    }
+}
+@media screen and (max-width:650px) {
+    .portfolio{
+        grid-template-columns: 420px;
+    }
+    .portfolio > .portfolio-item > .item-picture{
+        height: 221px;
+    }
+}

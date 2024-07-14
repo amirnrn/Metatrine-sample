@@ -1,0 +1,260 @@
+/*first section*/
+.intro {
+    background: url("/assets/img/agency4-home-splash.jpg") no-repeat center;
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    align-items: center;
+}
+.intro > .left{
+    width: 70%;
+    margin: 0 auto;
+    height: fit-content;
+}
+.intro > .left > .title{
+    color: #0c117b;
+}
+.intro > .left > .color{
+    color: #4989fd;
+}
+.intro > .left >  .subtitle{
+    margin-top: 30px;
+}
+
+/*second section*/
+.info-section{
+    height: fit-content;
+    padding: 40px 0;
+    display: flex;
+    min-height: 500px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.info-section > .text-place > .subtitle{
+    margin-top: 30px;
+}
+.info-section > .bottom{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items:center;
+}
+.info-section > .bottom > .column{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 20px;
+}
+.info-section > .bottom > .column > .picture{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+.info-section > .bottom > .column > .title{
+    padding-top: 30px;
+    color: #4962FD;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+}
+.info-section > .bottom > .column > .subtitle{
+    color: #4e579b;
+    height: fit-content;
+    text-align: center;
+}
+
+/*third section*/
+
+.form-section{
+    padding: 60px 0;
+    text-align: center;
+    background: url("/assets/img/agency4-home-offer-bg.jpg") no-repeat center top;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+.form-section > .form-title > h1{
+    color: #fff;
+}
+.form-section > .form-title > p{
+    color:#fff;
+    margin-top: 30px;
+}
+.form-section > .bottom{
+    margin-top: 50px;
+    width: 70%;
+    max-width: 1000px;
+    font-size: 18px;
+}
+.form-section input{
+    border: 0 none;
+    outline: 0 none;
+    background-color: #fff;
+    color: #111;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    text-indent: 20px;
+    margin: 10px 0;
+}
+.form-section > .bottom > .display{
+    display: flex;
+    justify-content: space-between;
+}
+.form-section >.bottom >.display > input{
+    width: 48.7%;
+}
+.form-section > .bottom > textarea{
+    resize: none;
+    width:100%;
+    height: 200px;
+    border: 0 none;
+    outline: 0 none;
+    background-color: #fff;
+    color: #111;
+    font-weight: 400;
+    border-radius: 8px;
+    text-indent: 20px;
+    margin: 10px 0;
+    padding: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-section > .bottom > .button {
+    background-color: #f74371;
+    border: none;
+    outline: 0 none;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+/*forth section*/
+
+.offer-section {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+.offer-section > .left {
+    width: 500px;
+    aspect-ratio: 1/1;
+}
+.offer-section > .right {
+    width: 400px;
+    margin: 20px 0 0 30px;
+}
+.offer-section > .right > .subtitle{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+
+}
+.offer-section > .right > .ul {
+    margin: 20px 0 0 0;
+    list-style: none;
+    width: fit-content;
+}
+.offer-section > .right > .ul > li{
+    color:#0c117b;
+}
+.offer-section > .right .button {
+    background-color: #f74371;
+    border: none;
+    outline: 0 none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+
+/* i imported footer's styles into the head tag in html page */
+
+/*responsive*/
+/* the responsive codes of header,footer are in their own css file.*/
+
+@media screen and (max-width:960px) {
+    .offer-section > .right {
+        width: 300px;
+    }
+}
+@media screen and (max-width:842px) {
+    .info-section > .bottom > .column:first-child > .subtitle{
+        margin-top: 10px;
+    }
+    .offer-section{
+        padding: 10px 0;
+        flex-direction: column-reverse;
+    }
+    .offer-section > .left{
+        margin: 20px auto 0 auto;
+    }
+    .offer-section > .right{
+        width: 85%;
+    }
+    .offer-section > .right > .ul{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:670px) {
+    .info-section > h1{
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .info-section > .bottom{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        align-items:center;
+    }
+    .info-section > .bottom > .column{
+        margin-top: 40px;
+    }
+    .info-section > .bottom > .column:first-child{
+        margin-top: 0;
+    }
+    .info-section > .bottom > .column:first-child > .subtitle{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width:600px) {
+    .offer-section > .left{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media screen and (max-width:540px) {
+    .intro > h1{
+        font-size: 40px;
+        line-height: 40px;
+        margin-left: 50px;
+    }
+    .intro > .subtitle{
+        margin: 30px 0 0 50px;
+    }
+    .offer-section > .right{
+        margin-left: 30px;
+    }
+}

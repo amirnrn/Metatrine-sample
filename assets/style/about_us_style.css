@@ -1,0 +1,238 @@
+/*first section*/
+.intro {
+    background: url(/assets/img/agency4-aboutus-header.jpg) no-repeat center;
+    background-size: cover;
+    height: 550px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+}
+.intro > .left {
+    width: 70%;
+    margin: 0 auto;
+    height: fit-content;
+}
+.intro > .left > .subtitle{
+    margin-top: 20px;
+    line-height: 20px;
+}
+/*second (description) section*/
+
+.dscpt-section {
+    margin: 50px 0;
+}
+.dscpt-section > .top {
+    text-align: center;
+}
+.dscpt-section > .grid {
+    display: grid;
+    grid-template-columns: 450px 450px ;
+    justify-content: center;
+    gap:40px;
+    width: 80%;
+    margin: 40px auto;
+}
+.dscpt-section > .grid > .subtitle {
+    line-height: 25px;
+}
+
+/*third section*/
+
+.list-section {
+    width: 80%;
+    margin: 0 auto;
+
+}
+.list-section > .image {
+    aspect-ratio: 2.4/1;
+    width: 100%;
+}
+
+.list-section > ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    color: #0c117b;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+/*forth section*/
+
+.features-section {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 70px;
+    gap: 50px;
+}
+.features-section > .left{
+    height: 550px;
+    width: 50%;
+    background: url("/assets/img/agency4-aboutus-highlight1.jpg") no-repeat center;
+}
+.features-section > .right {
+    width: 43%;
+
+}
+.features-section > .right .subtitle{
+    padding: 15px 0;
+}
+.features-section .right .p-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 190px);
+    padding-top: 20px;
+}
+.features-section .right .p-wrapper p {
+    height: 35px;
+}
+.features-section .right .button{
+    margin-top: 15px;
+}
+
+/*fifth section*/
+.static-section{
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+.static-section > .right{
+    height: 550px;
+    width: 50%;
+    background: url("/assets/img/agency4-aboutus-highlight2.jpg") no-repeat center;
+}
+.static-section > .left{
+    height: fit-content;
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+}
+.static-section > .left > .title{
+    order: 1;
+}
+.static-section > .left > p{
+    color: #ADADC1;
+    font-size: 17px;
+    margin: 15px 0;
+    order: 1;
+}
+.static-section > .left > .container-section{
+    height: fit-content;
+    width: 100%;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3,140px);
+    grid-template-rows: 80px 40px;
+    justify-content: flex-start;
+    gap: 0px 50px;
+    order: 1;
+}
+.static-section > .left > .container-section > .container-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    text-align: left;
+}
+.static-section > .left > .container-section > .container-child:first-child{
+    color:#15C68F;
+}
+.static-section > .left > .container-section > .container-child:nth-child(2){
+    color:#EE9C32;
+}
+.static-section > .left > .container-section > .container-child:nth-child(3){
+    color:#0C117B;
+}
+.static-section > .left > .button{
+    order: 2;
+    margin-top: 20px;
+}
+/*sixth section*/
+/* i imported the styles of sign up section into the head tag of html page */
+
+/* i imported footer's styles into the head tag in html page */
+
+/*responsive*/
+/* the responsive codes of header,footer,sign up section are in their own css file.*/
+@media screen and (max-width:1200px) {
+    .static-section .left {
+        width: 41%;
+    }
+    .static-section > .left > .container-section{
+        grid-template-columns: repeat(3, 100px);
+    }
+}
+@media screen and (max-width:1000px) {
+    .dscpt-section > .grid {
+        grid-template-columns: 320px 320px;
+    }
+}
+@media screen and (max-width:950px) {
+    .features-section {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .features-section > .left {
+        height: 500px;
+        width:100%;
+    }
+    .features-section > .right {
+        padding-left: 50px;
+        width: 85%;
+    }
+    .static-section{
+        margin-top: 50px;
+        flex-direction: column-reverse;
+    }
+    .static-section > .left{
+        width: 85%;
+        height: fit-content;
+        margin: 0 0 0 50px;
+    }
+    .static-section > .left > .container-section{
+        gap: 0px 40px;
+    }
+    .static-section > .right {
+        width: 100%;
+    }
+}
+@media screen and (max-width:730px){
+    .intro > .left{
+        left: 50px;
+    } 
+    .dscpt-section > .grid {
+        grid-template-columns: 500px;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media screen and (max-width:600px) {
+    .intro > .left{
+        width: 400px;
+    }
+    .static-section > .left > .container{
+        justify-content: flex-start;
+    }
+    .static-section > .left > .container-section{
+        grid-template-columns: repeat(3, 70px);
+    }
+    .static-section > .left > .container > .child {
+        margin: 10px;
+    }
+    .sign-up-section{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:540px) {
+    .list-section > ul{
+        grid-template-columns: 1fr;
+    }
+    .dscpt-section > .grid {
+        grid-template-columns: 400px;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,240 @@
+/* root css related to this page */
+.subtitle-color {
+    font-size: 15px;
+    color: #4480f0;
+}
+.container-color{
+    color:#626262;
+    font-size: 18px;
+}
+
+/*first section */
+.intro{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f1f4f6;
+    font-size: 55px;
+    margin-bottom: -30px;
+}
+.intro > .text{
+    width: fit-content;
+    display: inline;
+    height: fit-content;
+    text-align: center;
+}
+.intro > .text > .color{
+    display: inline;
+}
+.intro > .text > .sec-color{
+    display: inline;
+}
+.second-section-picture > .container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.text-section{
+    height: fit-content;
+    margin-top: 70px;
+    padding: 0 50px;
+}
+.text-section > .container{
+    max-width: 870px;
+    margin: 0 auto;
+}
+.text-section > .container > .third-section-title{
+    margin-bottom: 25px;
+    color: #0c117b;
+    font-weight: 400;
+}
+.text-section > .container > .third-section-subtitle{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: space-between;
+}
+.text-section > .container > .third-section-subtitle > .subtitle:last-child{
+    padding-left: 30px;
+}
+.counters-parent{
+    position: relative;
+    padding-top: 50px;
+    height: 200px;
+}
+.counters-parent > .container-section{
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: 80px 40px;
+    justify-content: center;
+    gap: 0px 150px;
+}
+.counters-parent > .container-section > .container-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+.counters-parent > .container-section > .container-child:first-child{
+    color:#15C68F;
+}
+.counters-parent > .container-section > .container-child:nth-child(2){
+    color:#EE9C32;
+}
+.counters-parent > .container-section > .container-child:nth-child(3){
+    color:#0C117B;
+}
+.fifth-section-pictures{
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    padding-bottom: 50px 0;
+}
+.fifth-section-pictures > .pictures{
+    width: 250px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+.fifth-section-pictures > .pictures > img{
+    transition: all 0.2s;
+}
+
+.fifth-section-pictures > .pictures:hover > img{
+    transform: scale(1.2);
+    filter: brightness(0.8);
+}
+
+.sixth-section-description{
+    height: fit-content;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.sixth-section-description > .left-part{
+    width: fit-content;
+}
+.sixth-section-description > .left-part > .left-part-top{
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.sixth-section-description > .right-part{
+    width: 500px;
+}
+
+/* last section */
+/* i imported the sign up section's styles into the head tag in html page */
+
+/* i imported footer's styles into the head tag in html page */
+
+.button {
+    width: 156px;
+    background-color: #F84B44;
+    border: none;
+    outline: 0 none;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.button:hover {
+    background-color: #EB4640;
+}
+.join-button{
+    background-color: #f74371;
+    border: none;
+    outline: 0 none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+
+/* responsive */
+/* the responsive codes of header,footer,sign up section are in their own css file.*/
+
+@media screen and (max-width: 1120px) {
+    .fifth-section-pictures{
+        display: grid;
+        grid-template-columns: 350px 350px;
+    }
+    .fifth-section-pictures > .pictures{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .fifth-section-pictures{
+        display: grid;
+        grid-template-columns: 250px 250px;
+    }
+    .fifth-section-pictures > .pictures{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .pre-title{
+        font-size: 25px;
+    }
+    .text-section > .container{
+        max-width: 700px;
+    }
+    .text-section > .container > .third-section-subtitle{
+        grid-template-columns: 300px 300px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .text-section > .container > .third-section-subtitle{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .text-section > .container > .third-section-subtitle > .subtitle:last-child{
+        padding: 0;
+    }
+}
+@media screen and (max-width:700px) {
+    .counters-parent > .container-section{
+        gap: 0 50px;
+    }
+    .sixth-section-description{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .intro{
+        height: 300px;
+    }
+}
+@media screen and (max-width:600px) {
+    .fifth-section-pictures{
+        display: grid;
+        grid-template-columns: 400px;
+    }
+    .fifth-section-pictures > .pictures{
+        width: 100%;
+    }
+    .sixth-section-description > .right-part{
+        width: fit-content;
+    }
+}
+@media screen and (max-width:550px) {
+    .counters-parent > .container-section{
+        gap: 0 30px;
+    }
+}

@@ -1,0 +1,50 @@
+.sign-up-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/assets/img/agency4-home-newsletter-bg.jpg");
+    background-size: 100% 160%;
+    background-position: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.sign-up-section > .container{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.sign-up-section > .container > h2{
+    font-size: 40px;
+    margin: 0;
+}
+.sign-up-section > .container > h2 > div{
+    display: inline;
+}
+.sign-up-section > .container > .subtitle{
+    margin-top: 50px;
+}
+.sign-up-section > .container > .input-place {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.sign-up-section > .container > .input-place > input{
+    border: 0;
+    outline: 0;
+    height: 48px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    text-indent: 10px;
+    width: 80%;
+}
+.sign-up-section > .container > .input-place > input:focus{
+    background: #e9f5fc;
+}
+.sign-up-section > .container > .privacy{
+    margin-top: 40px;
+    color: #999;
+}
+
+/* it doesnt need the responsive part. because it is responsive by default */

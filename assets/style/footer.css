@@ -1,0 +1,139 @@
+footer {
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 55px;
+    line-height: 25px;
+    display: flex;
+    justify-content: space-around;
+    background: #FAFBFC;
+}
+
+.footer-classes {
+    width: 250px;
+    display: inline-block;
+}
+.footer-bar {
+    height: 55px;
+    width: 200px;
+}
+
+footer h3 {
+    color:#626262;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+footer h3 span {
+    color: #5383d3;
+}
+footer > .footer-left{
+    width: 300px;
+}
+footer > .footer-left > .footer-links {
+    color:#626262 ;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+footer > .footer-left > .footer-links a {
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+    margin: 0 10px;
+}
+footer > .footer-left > .footer-links > a::after{
+    content: " -";
+    position: relative;
+    bottom: 3px;
+    left: 2px;
+}
+footer > .footer-left > .footer-links > a:last-child:after{
+    content: "";
+}
+
+footer .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+footer .footer-center{
+    padding-left: 20px;
+}
+footer .footer-center div p{
+    display: block;
+    color: #626262;
+    margin:0;
+}
+footer .footer-center div span{
+    display: block;
+    color: #626262;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+footer .footer-center p a{
+    color:  #5383d3;
+    text-decoration: none;;
+}
+
+footer .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+footer .footer-company-about span{
+    display: block;
+    color:  #626262;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+footer > .footer-right > a{
+    display: block;
+    text-decoration: none;
+    color:#626262;
+}
+
+footer > .footer-right > .scroll{
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 0 none;
+    float: right;
+    background: rgb(102, 102, 102);
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/*responsive*/
+
+@media screen and (max-width:850px) {
+    footer > .footer-classes{
+        width: 200px;
+    }
+}
+@media screen and (max-width:730px){
+    footer{
+        padding: 55px 20px;
+    }
+    footer > .footer-classes{
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width:600px) {
+    footer{
+        display: grid;
+    }
+    footer > .footer-classes:first-child{
+        margin-top: 0;
+    } 
+    footer > .footer-classes{
+        margin-top: 40px;
+        width: 270px;
+    }
+}

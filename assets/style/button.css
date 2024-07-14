@@ -1,0 +1,59 @@
+.button {
+    width: 156px;
+    background-color: #F84B44;
+    border: none;
+    outline: 0 none;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.button:hover {
+    background-color: #EB4640;
+}
+.join-button{
+    background-color: #f74371;
+    border: none;
+    outline: 0 none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.sec-button {
+    border-style: solid;
+    border-color: #0c117b;
+    background-color: white;
+    color:#0c117b;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.sec-button:hover {
+    border-style: solid;
+    border-color: #0c117b;
+    background-color: #0c117b;
+    color:#fff;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+}
